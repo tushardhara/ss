@@ -13,6 +13,31 @@ Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('fonts/Nexa Light.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'ae_Hor';
+    src: url('fonts/ae-hor.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Tahoma';
+    src: url('fonts/Tahoma.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Throw My Hands Up in the Air';
+    src: url('fonts/ThrowMyHandsUpintheAir.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Throw My Hands Up in the Air Bold';
+    src: url('fonts/ThrowMyHandsUpintheAirBold.ttf') format('truetype');
+    font-weight: bold;
+}
 .clearfix:after { 
   content: "."; 
   display: block; 
@@ -302,7 +327,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	nav li a{
 		text-decoration: none;
 		font-size: 20px;
-		font-family: "Throw My Hands Up in the Air";
+		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
 		color: #636363;
 	}
@@ -333,7 +358,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.big-title{
 		line-height: 1;
-		font-family: "Throw My Hands Up in the Air";
+		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
 		color: #753f8b;
 		margin-top: 26px;
@@ -381,7 +406,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	.itemName{
 		font-size: 30px;
 		line-height: 1;
-		font-family: "Throw My Hands Up in the Air";
+		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
 		color: #753f8b;
 	}
@@ -428,7 +453,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	.contact-title{
 		font-size: 50px;
 		line-height: 1;
-		font-family: "Throw My Hands Up in the Air";
+		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
 		color: #753f8b;
 		margin-top: 40px;
@@ -539,27 +564,27 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	::-webkit-input-placeholder {
 	   color: #5c5c5c;
 	   font-size: 13px;
-	   font-family: "Throw My Hands Up in the Air";
+	   font-family: "Throw My Hands Up in the Air Bold";
 	   font-weight: bold;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
 	   color: #5c5c5c; 
 	   font-size: 13px; 
-	   font-family: "Throw My Hands Up in the Air";
+	   font-family: "Throw My Hands Up in the Air Bold";
 	   font-weight: bold;
 	}
 
 	::-moz-placeholder {  /* Firefox 19+ */
 	   color: #5c5c5c; 
 	   font-size: 13px; 
-	   font-family: "Throw My Hands Up in the Air";
+	   font-family: "Throw My Hands Up in the Air Bold";
 	   font-weight: bold;
 	}
 
 	:-ms-input-placeholder {  
 	   color: #5c5c5c;  
-	   font-family: "Throw My Hands Up in the Air";
+	   font-family: "Throw My Hands Up in the Air Bold";
 	   font-weight: bold;
 	}
 	.footer-title{
@@ -672,7 +697,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.article-title{
 		font-size: 43px;
-		font-family: "Throw My Hands Up in the Air";
+		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
 	}
 	.article-title a{
@@ -717,4 +742,118 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.show-comment.active .icon{
 		background: url(images/comment-icon.png) -24px 0px no-repeat;
+	}
+	.order-title{
+		font-size: 64px;
+		line-height: 1;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		padding-top: 40px;
+		color:#9623c3;
+	}
+	.order-menu{
+		width: 100%;
+		height: auto;
+	}
+	.order-menu .order-group{
+		width: 476px;
+		height: 609px;
+		background: url(images/menu.png) 0px 0px no-repeat;
+		display: block;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.order-menu .order-group:nth-child(2n+1){
+		margin-right: 8px;
+	}
+	.order-menu .order-group.active{
+		width: 476px;
+		height: 165px;
+		background: url(images/menu.png) 0px -618px no-repeat;
+	}
+	.order-menu .order-group .order-group-box{
+		height: auto;
+		width: 380px;
+		margin: 50px auto;
+	}
+	.order-menu .order-group .order-group-box .order-menu-name{
+		font-size: 43px;
+		font-family: "Throw My Hands Up in the Air";
+		font-weight: normal;
+		color: #76408b;
+		float: left;
+		width: 100%;
+	}
+	.order-menu .order-group .order-group-box .order-menu-name .menu-toggle-icon{
+		width: 38px;
+		height: 37px;
+		background: url(images/toggle-menu.png) -39px 0px no-repeat;
+		display: block;
+		float: right;
+		position: relative;
+		cursor: pointer;
+	}
+	.order-menu .order-group .order-group-box .order-menu-name .menu-toggle-icon.active{
+		background: url(images/toggle-menu.png) 1px 0px no-repeat;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items{
+		height: 429px;
+		overflow-y: scroll;
+		float: left;
+		width: 87%;
+		margin-top: 27px;
+		margin-left: 18px;
+		margin-right: auto;
+		padding-right:20px; 
+	}
+	.order-menu .order-group.active .order-group-box .order-menu-items{
+		height: 0px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-name{
+		width: 100%;
+		line-height: 1.2;
+		font-family: "ae_Hor";
+		font-weight: normal;
+		color: #272727;
+		font-size: 22px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-price{
+		color: #76408b;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		font-size: 29px;
+		position: absolute;
+		right: -10px;
+		top: 0px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-desc{
+		color: #272727;
+		font-family: tahoma;
+		font-weight: normal;
+		line-height: 1;
+		font-size: 11px;
+		margin-bottom: 20px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items.active{
+		height: 0px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items::-webkit-scrollbar {
+	    width: 4px;
+	}
+	 
+	/* Track */
+	.order-menu .order-group .order-group-box .order-menu-items::-webkit-scrollbar-track {
+	    -webkit-border-radius: 2px;
+	    border-radius: 2px;
+	    background: #cac4bb;
+
+	}
+	 
+	/* Handle */
+	.order-menu .order-group .order-group-box .order-menu-items::-webkit-scrollbar-thumb {
+	    -webkit-border-radius: 2px;
+	    border-radius: 2px;
+	    background: #6cc56c; 
 	}

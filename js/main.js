@@ -1,0 +1,13 @@
+jQuery(document).ready(function(){
+	$(".menu-toggle-icon").on('click',function(){
+		if($(this).parent().parent().parent().hasClass('active')){
+			$(this).parent().parent().parent().removeClass('active');
+			$(this).removeClass('active');
+			$(this).parent().parent().children('.order-menu-items').removeClass('active');
+		}else{
+			$(this).parent().parent().parent().addClass('active');
+			$(this).addClass('active');
+			$(this).parent().parent().children('.order-menu-items').addClass('active');
+		}
+	});
+});
