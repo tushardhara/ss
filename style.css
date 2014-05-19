@@ -1,5 +1,5 @@
 /*
-Theme Name: S&S
+Theme Name: SS
 Theme URI: http://helixsoft.in
 Author: Tushar Dhara
 Author URI: http://helixsoft.in
@@ -36,6 +36,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @font-face {
     font-family: 'Throw My Hands Up in the Air Bold';
     src: url('fonts/ThrowMyHandsUpintheAirBold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Drawing Guides';
+    src: url('fonts/Drawing Guides.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Eraser Regular';
+    src: url('fonts/EraserRegular.ttf') format('truetype');
     font-weight: bold;
 }
 .clearfix:after { 
@@ -104,7 +114,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 
-	p { margin: 0 0 20px 0; font-size: 13px;}
+	p { margin: 0 0 20px 0; font-size: 13px;font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		font-size: 15px;}
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
@@ -124,7 +136,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a, a:visited { text-decoration: underline; outline: 0; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -295,11 +307,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		height: auto;
 		width: 100%;
 		background:url(images/ss-bg-image.jpg);
+		min-height: 428px;
+	}
+	.main.line-bg{
+		background:url(images/menu-bg.png);
 	}
 	.container{
 		margin: 0 auto;
 		width: 960px;
 		height: auto;
+		position: relative;
 	}
 	nav{
 		float: left;
@@ -329,32 +346,52 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		font-size: 20px;
 		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
-		color: #636363;
+		color: #753f8b;
+	}
+	nav li.current_page_item a{
+		color: #191919;
 	}
 	nav li a.active{
-		color: #753f8b;
+		color: #191919;
 	}
 	nav li a:hover{
+		color: #191919;
+	}
+	nav li.contact-down  a{
 		color: #753f8b;
+	}
+	nav li.contact-down  a:hover{
+		color: #191919;
 	}
 	.logo{
 		float: left;
 		margin: 4px 0;
 	}
 	.first-section{
-		padding: 46px 0px 36px;
+		padding: 76px 0px 0px;
 		height: auto;
 	}
 	.wardrobe{
 		width: 504px;
 		height: 408px;
-		background: url(images/wardrobe.png);
 		float: left;
 		margin-right: 25px;
 	}
 	.about-ss{
 		float: left;
 		width: 410px;
+	}
+	.about-ss p{
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		font-size: 15px;
+padding-right: 87px;
+text-align: justify;
+	}
+	.contact-desc{
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		font-size: 15px;
 	}
 	.big-title{
 		line-height: 1;
@@ -395,28 +432,55 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		height: auto;
 		display: block;
 	}
+	.board .center{
+		margin: 0 auto;
+		display: block;
+	}
 	.bigItemOfWeekText{
-		font-size: 46px;
+		font-size: 57px;
 		line-height: 1.2;
-		font-family: "ae_Hor";
+		font-family: "Drawing Guides";
 		font-weight: normal;
 		color: #fff;
-		margin-top: 46px;
+		margin-top: 0px;
 	}
 	.itemName{
-		font-size: 30px;
+		font-size: 34px;
 		line-height: 1;
-		font-family: "Throw My Hands Up in the Air Bold";
+		font-family: "Eraser Regular";
 		font-weight: bold;
-		color: #753f8b;
+		color: #bc6eda;
+		margin-bottom: 31px;
+	}
+	.itemName a{
+		font-family: "Eraser Regular";
+		font-weight: bold;
+		color: #bc6eda;
+		text-decoration: none;
 	}
 	.absolute-container .col6{
 		width: 50%;
 		height: auto;
 		float: left;
 	}
-	.absolute-container .col6 img{
+	.absolute-container .col6 .featured-image-border{
+		width: 336px;
+		height: 216px;
+		float: right;
+		position: relative;
+		display: block;
+		margin-top: 35px;
+	}
+	.absolute-container .col6 .featured-image-border img{
 		margin-bottom: 20px;
+	}
+	.absolute-container .col6 .featured-image-border .over{
+		width: 336px;
+		height: 216px;
+		position: absolute;
+		background: url(images/item-border.png);
+		top: -13px;
+left: -15px;
 	}
 	.absolute-container .col12{
 		width: 100%;
@@ -425,6 +489,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.board .excerpt{
 		color: #fff;
+		text-align: justify;
+		font-family: "Eraser Regular";
+		font-size: 15px;
 	}
 	.share{
 		float: right;
@@ -512,14 +579,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		width: 65px;
 		padding: 2px 4px;
 		background: #383838;
-		-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
-		-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.75);
-		box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+		-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.68);
+		-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.68);
+		box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.68);
 		color: #fff;
 		font-size: 13px;
 		border:none;
 		margin-right: 20px;
 		margin-top: 20px;
+		font-family: "Throw My Hands Up in the Air";
+		font-weight: normal;
 	}
 	.contact-area .address .location{
 		width: 164px;
@@ -529,7 +598,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.contact-area .address .location .location-text{
 		line-height: 1.2;
-		font-family: "ae_Hor";
+		font-family: "Throw My Hands Up in the Air";
 		font-weight: normal;
 		color: #481d06;
 		font-size: 28px;
@@ -541,17 +610,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		background: url(images/location.png) center center no-repeat;
 	}
 	.contact-area .address .location .location-detail .location-detail-address{
-		font-family: "Nexa Light";
+		font-family: "Throw My Hands Up in the Air";
 		line-height: 1.2;
 		font-weight: normal;
-		color: #353535;
+		color: #8f8b85;
 		font-size: 11px;
 		text-align: center;
 		padding: 20px 10px 5px 10px;
 	}
 	.contact-area .address .location .location-detail .location-detail-phone{
 		line-height: 1.2;
-		font-family: "ae_Hor";
+		font-family: "Throw My Hands Up in the Air";
 		font-weight: normal;
 		color: #747474;
 		font-size: 14px;
@@ -588,19 +657,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	   font-weight: bold;
 	}
 	.footer-title{
-		font-family: "Nexa Light";
+		font-family: "Throw My Hands Up in the Air";
 		line-height: 1.3;
 		font-weight: normal;
 		font-size: 42px;
 		color: #fff;
 		margin-top: 12px;
+		word-spacing: 18px;
 	}
 	
 
 	footer{
 		width: 100%;
 		height: 116px;
-		background: #1b1b1b;
+		background: rgba(180,101,190,0.73);
 	}
 	footer .footer-left{
 		width: 655px;
@@ -625,25 +695,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin-left: 15px;
 	}
 	footer .footer-right .social li a.facebook{
-		width: 74px;
-		height: 73px;
+		width: 79px;
+		height: 78px;
 		display: block;
-		background: url(images/facebook.png) center center no-repeat;
+		background: url(images/social.png) -24px -7px no-repeat;
+	}
+	footer .footer-right .social li a.facebook:hover{
+		background: url(images/social.png) -21px -104px no-repeat;	
 	}
 	footer .footer-right .social li a.twitter{
-		width: 74px;
-		height: 73px;
+		width: 79px;
+		height: 78px;
 		display: block;
-		background: url(images/twitter.png) center center no-repeat;
+		background: url(images/social.png) -122px -7px no-repeat;
+	}
+	footer .footer-right .social li a.twitter:hover{
+		background: url(images/social.png) -119px -104px no-repeat;
 	}
 	footer .footer-right .social li a.instragram{
-		width: 75px;
-		height: 73px;
+		width: 79px;
+		height: 78px;
 		display: block;
-		background: url(images/instragram.png) center center no-repeat;
+		background: url(images/social.png) -227px -7px no-repeat;
+	}
+	footer .footer-right .social li a.instragram:hover{
+		background: url(images/social.png) -224px -104px no-repeat;
 	}
 	nav.footer-nav{
-		text-align: center;
 		float: left;
 		margin: 0px 0;
 		width: 100%
@@ -656,14 +734,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	nav.footer-nav li a{
 		text-decoration: none;
-		font-size: 13px;
-		font-family: "Tahoma";
+		font-size: 15px;
+		font-family: "Throw My Hands Up in the Air";
 		font-weight: normal;
 		color: #fff;
 
 	}
 	nav.footer-nav li a:hover{
-		color: #753f8b;
+		color: #7dff8d;
 	}
 	.article:nth-child(-n+1){
 		padding-top: 40px;
@@ -683,14 +761,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin-bottom: 5px;
 		text-align: right;
 		margin-top: 8px;
+		font-family: "Throw My Hands Up in the Air Bold";
 	}
 	.article .title-area .activity .date{
 		color: #272727;
 		font-size: 12px;
 		margin-bottom: 5px;
+		font-family: "Throw My Hands Up in the Air Bold";
 	}
 	.article .title-area .activity .share span{
 		color: #272727;
+		font-family: "Throw My Hands Up in the Air Bold";
 	}
 	.article .title-area .activity .share span a{
 		text-indent: -99999px;
@@ -702,13 +783,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.article-title a{
 		text-decoration: none;
-		color: #666666;
+		color: #591773;
 	}
 	.article-title a:hover{
-		color: #591773;
+		color: #a584b7;
 	}
 	.featured-image{
 		border-radius:4px;
+		margin-bottom: 20px;
 	}
 	.featured-image img{
 		width: 100%;
@@ -721,8 +803,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.show-comment{
 		line-height: 1.2;
-		font-family: "ae_Hor";
-		font-weight: normal;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
 		color: #2c2c2c;
 		font-size: 16px;
 		text-align: left;
@@ -738,10 +820,70 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		left: 10px;
 	}
 	.show-comment.active{
-		color: #3ca23c;
+		color: #b6f8bf;
 	}
 	.show-comment.active .icon{
 		background: url(images/comment-icon.png) -24px 0px no-repeat;
+	}
+	.read{
+		line-height: 1.2;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #2c2c2c;
+		font-size: 16px;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	.read a{
+		text-decoration: none;
+		float: left;
+			color: #2c2c2c;
+	}
+	.read .icon{
+		background: url(images/read.png) 0px 0px no-repeat;
+		height: 23px;
+		width: 22px;
+		display: inline-block;
+		position: relative;
+		top: 6px;
+		left: 0px;
+		margin-left: 5px;
+	}
+	.read a:hover{
+		color: #2d951c;
+	}
+	.read a:hover .icon{
+		background: url(images/read.png) -24px 0px no-repeat;
+	}
+	.back{
+		line-height: 1.2;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #2c2c2c;
+		font-size: 16px;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.back a{
+		text-decoration: none;
+		float: left;
+		color: #2c2c2c;
+	}
+	.back .icon{
+		background: url(images/back.png) 0px 0px no-repeat;
+		height: 23px;
+		width: 22px;
+		display: inline-block;
+		position: relative;
+		top: 6px;
+		left: 0px;
+		margin-right: 5px;
+	}
+	.back a:hover{
+		color: #2d951c;
+	}
+	.back a:hover .icon{
+		background: url(images/back.png) -24px 0px no-repeat;
 	}
 	.order-title{
 		font-size: 64px;
@@ -749,27 +891,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
 		padding-top: 40px;
-		color:#9623c3;
+		color:#6c3283;
 	}
 	.order-menu{
 		width: 100%;
 		height: auto;
+		-webkit-column-width: 476px;
+		-webkit-column-gap: 8px;
 	}
 	.order-menu .order-group{
 		width: 476px;
-		height: 609px;
+		height: 607px;
 		background: url(images/menu.png) 0px 0px no-repeat;
 		display: block;
-		float: left;
 		margin-bottom: 40px;
-	}
+		display: inline-block;
+-webkit-column-break-inside: avoid;
+}
 	.order-menu .order-group:nth-child(2n+1){
-		margin-right: 8px;
+		margin-right: 0px;
 	}
 	.order-menu .order-group.active{
 		width: 476px;
 		height: 165px;
-		background: url(images/menu.png) 0px -618px no-repeat;
+		background: url(images/menu.png) 0px -607px no-repeat;
 	}
 	.order-menu .order-group .order-group-box{
 		height: auto;
@@ -778,9 +923,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.order-menu .order-group .order-group-box .order-menu-name{
 		font-size: 43px;
-		font-family: "Throw My Hands Up in the Air";
-		font-weight: normal;
-		color: #76408b;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #6c3283;
 		float: left;
 		width: 100%;
 	}
@@ -810,14 +955,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		height: 0px;
 	}
 	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-name{
-		width: 100%;
+		width: 80%;
 		line-height: 1.2;
-		font-family: "ae_Hor";
-		font-weight: normal;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
 		color: #272727;
 		font-size: 22px;
 		position: relative;
 		margin-bottom: 20px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-name a{
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #272727;
+		text-decoration: none;
 	}
 	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-price{
 		color: #76408b;
@@ -825,8 +976,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		font-weight: bold;
 		font-size: 29px;
 		position: absolute;
-		right: -10px;
-		top: 0px;
+		right: -65px;
+		top: -2px;
 	}
 	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-desc{
 		color: #272727;
@@ -840,20 +991,1083 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		height: 0px;
 	}
 	.order-menu .order-group .order-group-box .order-menu-items::-webkit-scrollbar {
-	    width: 4px;
+		width: 35px;
 	}
 	 
 	/* Track */
 	.order-menu .order-group .order-group-box .order-menu-items::-webkit-scrollbar-track {
-	    -webkit-border-radius: 2px;
-	    border-radius: 2px;
-	    background: #cac4bb;
-
+	  
 	}
 	 
 	/* Handle */
 	.order-menu .order-group .order-group-box .order-menu-items::-webkit-scrollbar-thumb {
-	    -webkit-border-radius: 2px;
-	    border-radius: 2px;
-	    background: #6cc56c; 
+	   cursor: pointer;
+	    background: url(images/scroller.png) no-repeat;
+	    width: 35px;
+	    height: 42px;
 	}
+
+	.menu{
+		width: 100%;
+		height: auto;
+	}
+	.menu-right{
+		width: 164px;
+		height: auto;
+		float: left;
+		margin-top: 3px;
+		position: relative;
+		left: 18px;
+	}
+	.menu-right .menu-right-item{
+		cursor: pointer;
+	}
+	.menu-right .menu-right-item-image{
+		width: 100%;
+		height: auto;
+		margin-bottom: 12px;
+	}
+	.menu-right .menu-right-item-image img{
+	 	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.menu-right .menu-right-item-title{
+		width: 100%;
+		height: auto;
+		margin-bottom: 12px;
+		font-size: 34px;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #505050;
+		text-align: center;
+	}
+	.menu-right .menu-right-item.active .menu-right-item-title{
+		color: #76408b;
+	}
+	.menu-left .menu-group{
+		width: 769px;
+		height: 901px;
+		background: url(images/menu-big.png) 0px 0px no-repeat;
+		display: block;
+		float: left;
+		margin-bottom: 40px;
+	}
+	.menu-left .menu-group:nth-child(2n+1){
+		margin-right: 8px;
+	}
+	.menu-left .menu-group .menu-group-box{
+		height: auto;
+		width: 600px;
+		margin: 75px auto;
+	}
+	.menu-left .menu-group .menu-group-box{
+		display: none;
+	}
+	.menu-left .menu-group .menu-group-box.active{
+		display: block;
+	}
+	.menu-left .menu-group .menu-group-box .menu-name{
+		font-size: 43px;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #623283;
+		float: left;
+		width: 100%;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items{
+		height: 650px;
+		overflow-y: scroll;
+		float: left;
+		width: 87%;
+		margin-top: 27px;
+		margin-left: 18px;
+		margin-right: auto;
+		padding-right:35px; 
+	}
+	.menu-left .menu-group.active .menu-group-box .menu-items{
+		height: 0px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-name{
+		width: 100%;
+		line-height: 1.2;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #272727;
+		font-size: 22px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-name a{
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		color: #272727;
+		text-decoration: none;
+	}
+
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-price{
+		color: #76408b;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		font-size: 29px;
+		position: absolute;
+		right: -10px;
+		top: 0px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-desc{
+		color: #272727;
+		font-family: "Throw My Hands Up in the Air Bold";
+		font-weight: bold;
+		line-height: 1;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items.active{
+		height: 0px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items::-webkit-scrollbar {
+	    width: 35px;
+	}
+	 
+	/* Track */
+	.menu-left .menu-group .menu-group-box .menu-items::-webkit-scrollbar-track {
+
+	}
+	 
+	/* Handle */
+	.menu-left .menu-group .menu-group-box .menu-items::-webkit-scrollbar-thumb {
+		cursor: pointer;
+	    background: url(images/scroller.png) no-repeat;
+	    width: 35px;
+	    height: 42px; 
+
+	}
+
+	.grayscale {
+  /* Firefox 10+, Firefox on Android */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+
+  /* IE 6-9 */
+  filter: gray;
+
+  /*
+    Chrome 19+,
+    Safari 6+,
+    Safari 6+ iOS,
+    Opera 15+
+  */
+  -webkit-filter: grayscale(100%);
+}
+.grayscale.fade {
+  -webkit-transition: -webkit-filter .5s;
+}
+
+.grayscale.fade:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+
+.grayscale.fade {
+  -webkit-transition: -webkit-filter .5s;
+}
+
+.grayscale.fade:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+.grayscale-replaced.fade svg {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.grayscale-replaced.fade:hover svg {
+  opacity: 0;
+}
+.gallery-container{
+	margin: 0 auto;
+	width: 1200px;
+	height: auto;
+}
+.gallery{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+#gallery .mix{
+	display: none;
+}
+.gallery .gallery-group{
+		width: 389px;
+		height: 532px;
+		background: url(images/gallery-bg.png) 0px 0px no-repeat;
+		display: block;
+		float: left;
+		margin-bottom: 16px;
+		margin-right: 16px;
+}
+.gallery .gallery-group:nth-child(3n+3){
+	margin-right: 0px;
+}
+.gallery .gallery-group .gallery-group-box{
+	height: 450px;
+	width: 300px;
+	margin: 35px auto;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.25);
+-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.25);
+box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.25);
+position: relative;
+}
+.gallery .gallery-group .gallery-group-box .gallery-group-box-thumb img{
+	display: block;
+	-moz-border-radius-topleft: 10px;
+-webkit-border-top-left-radius: 10px;
+ border-top-left-radius: 10px;
+-moz-border-radius-topright: 10px;
+-webkit-border-top-right-radius: 10px;
+border-top-right-radius: 10px;
+width: 100%;
+
+}
+.gallery .gallery-group .gallery-group-box .gallery-group-box-area{
+	padding: 10px;
+}
+.gallery .gallery-group .gallery-group-box .gallery-group-box-area .gallery-group-box-area-title{
+	margin-bottom: 10px;
+}
+.gallery .gallery-group .gallery-group-box .gallery-group-box-area .gallery-group-box-area-title a{
+	text-decoration: none;
+}
+.gallery .gallery-group .gallery-group-box .gallery-group-box-area .gallery-group-box-area-title a h1{
+	font-size: 29px;
+	font-family: "Throw My Hands Up in the Air Bold";
+	font-weight: bold;
+	color: #6c3283;
+	text-align: left;
+	margin: 0;
+	line-height: 1.2;
+}
+.gallery .gallery-group .gallery-group-box .gallery-group-box-area .desc{
+	font-size: 13px;
+		font-family: "Tahoma";
+		font-weight: normal;
+}
+.gallery .gallery-group .gallery-group-box .share{
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+}
+.gallery .gallery-group .gallery-group-box .read-more{
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	margin-bottom: 16px;
+}
+.gallery .gallery-group .gallery-group-box .read-more a{
+	text-decoration: none;
+	color: #2c2c2c;
+	font-family: "Throw My Hands Up in the Air Bold";
+	font-weight: bold;
+}
+.gallery .gallery-group .gallery-group-box .read-more a:hover{
+	text-decoration: none;
+	color: #2d951c;
+}
+.gallery .gallery-group .gallery-group-box .share span{
+	color: #000;
+	font-weight: bold;
+	position: relative;
+	font-size: 14px;
+	font-family: "Throw My Hands Up in the Air Bold";
+	font-weight: bold;
+}
+.gallery .gallery-group .gallery-group-box .share span:first-child{
+	top:-2px;
+}
+.nav-pagination{
+	margin: 0px;
+	width: auto;
+	float: right;
+}
+.nav-previous,.nav-next{
+	display: inline-block;
+}
+.nav-previous a{
+	width: 41px;
+	height: 41px;
+	display: inline-block;
+	text-indent: -99999px;
+	background: url(images/arrow-left.png) 0 0 no-repeat;
+}
+.nav-previous a:hover{
+	background: url(images/arrow-left.png) -43px 0 no-repeat;
+}
+.nav-next a{
+	width: 41px;
+	height: 41px;
+	display: inline-block;
+	text-indent: -99999px;
+	background: url(images/arrow-right.png) -43px 0 no-repeat;
+}
+.nav-next a:hover{
+	background: url(images/arrow-right.png)  0px 0 no-repeat;
+}
+#infscr-loading{
+	text-align: center;
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+}
+#infscr-loading img{
+	margin: 0 auto;
+}
+.my-content p{
+	word-wrap: break-word;
+}
+.gallery-filter{
+	text-align: justify;
+	width: 100%;
+	display: block;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.gallery-filter .filter{
+	display: inline-block;
+	text-indent: -99999px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+.gallery-filter .filter.all{
+	width: 124px;
+	height: 57px;
+	background: url(images/tabs.png) -18px -6px no-repeat;
+}
+.gallery-filter .filter.all:hover{
+	background: url(images/tabs.png) -18px -129px no-repeat;
+}
+.gallery-filter .filter.all.active{
+	background: url(images/tabs.png) -18px -129px no-repeat;
+}
+.gallery-filter .filter.one{
+	width: 138px;
+	height: 57px;
+	background: url(images/tabs.png) -205px -6px no-repeat;
+}
+.gallery-filter .filter.one:hover{
+	background: url(images/tabs.png) -205px -129px no-repeat;
+}
+.gallery-filter .filter.one.active{
+	background: url(images/tabs.png) -205px -129px no-repeat;
+}
+.gallery-filter .filter.two{
+	width: 170px;
+	height: 57px;
+	background: url(images/tabs.png) -405px -6px no-repeat;
+}
+.gallery-filter .filter.two:hover{
+	background: url(images/tabs.png) -405px -129px no-repeat;
+}
+.gallery-filter .filter.two.active{
+	background: url(images/tabs.png) -405px -129px no-repeat;
+}
+.gallery-filter .filter.three{
+	width: 170px;
+	height: 57px;
+	background: url(images/tabs.png) -627px -6px no-repeat;
+}
+.gallery-filter .filter.three:hover{
+	background: url(images/tabs.png) -627px -129px no-repeat;
+}
+.gallery-filter .filter.three.active{
+	background: url(images/tabs.png) -627px -129px no-repeat;
+}
+.gallery-filter .filter.four{
+	width: 170px;
+	height: 57px;
+	background: url(images/tabs.png) -886px -6px no-repeat;
+}
+.gallery-filter .filter.four:hover{
+	background: url(images/tabs.png) -886px -129px no-repeat;
+}
+.gallery-filter .filter.four.active{
+	background: url(images/tabs.png) -886px -129px no-repeat;
+}
+.gallery-filter .filter:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+.success-message,
+.alert-message,
+.error-message {
+	display:none;
+	font-size:12px;
+	letter-spacing:1px;
+	text-align: center;
+	color: #fff;
+	float: left;
+	margin-top: 23px;
+	font-family: "Throw My Hands Up in the Air Bold";
+	font-weight: bold;
+}
+.success-message{
+	color: #7dff8d;
+}
+.alert-message{
+	color: #ffa000;
+}
+.error-message {
+	color: #ff0000;
+}
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
+
+@media screen and (min-width:1024px) and (max-width: 1279px){
+	.board .center{
+		max-width: 100%;
+	}
+	.board .excerpt{
+		font-size: 11px;
+	}
+	.container{
+		max-width: 100%;
+	}
+	.gallery-container{
+		max-width: 100%;
+	}
+	.gallery {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width:768px) and (max-width: 1023px){
+	.board .center{
+		max-width: 100%;
+	}
+	.board .excerpt{
+		font-size: 11px;
+	}
+	.container {
+		max-width: 726px;
+		margin: 0 20px;
+	}
+	.about-ss {
+		max-width: 100%;
+		width: 100%;
+	}
+	.about-ss p{
+		padding-right: 0px;
+	}
+	.wardrobe{
+		width: 100%;
+		max-width: 100%;
+	}
+	.wardrobe img{
+		display: block;
+		margin: 0 auto;
+	}
+	.gallery-container{
+		max-width: 100%;
+	}
+	.absolute-container{
+		width: 600px;
+	}
+	.bigItemOfWeekText{
+		font-size: 36px;
+	}
+	.itemName{
+		font-size: 18px;
+		margin-bottom: 22px;
+	}
+	.board .excerpt{
+		font-size: 9px;
+	}
+	.absolute-container .col6 .featured-image-border{
+		width: 244px;
+		height: 169px;
+	}
+	.absolute-container .col6 .featured-image-border img {
+		margin-bottom: 20px;
+		width: 91%;
+	}
+	.absolute-container .col6 .featured-image-border .over {
+		width: 100%;
+		height: 159px;
+		position: absolute;
+		background: url(images/item-border.png);
+		top: -13px;
+		left: -15px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.contact-area .address{
+		width: 100%;
+		max-width: 100%;
+	}
+	.contact-area .address .location:nth-child(n+2) {
+		margin-left: 116px;
+	}
+	.contact-area .contact{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	footer .footer-left{
+		width: 420px;
+	}
+	nav.footer-nav{
+		display: none;
+	}
+	.footer-title {
+		font-size: 32px;
+		margin-top: 40px;
+		word-spacing: 0px;
+	}
+	.menu-left .menu-group {
+		width: 554px;
+		height: 654px;
+		background-size: 100%;
+	}
+	.menu-left .menu-group .menu-group-box {
+		width: 458px;
+	}
+	.menu-right .menu-right-item-image img {
+		max-width: 50%;
+	}
+	.menu-right .menu-right-item-title {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.order-menu .order-group {
+		width: 360px;
+		height: 455px;
+		background-size: 100%;
+	}
+	.order-menu .order-group.active{
+		width: 360px;
+		height: 130px;
+		background-size: 100% !important;
+		background: url(images/menu.png) 0px -454px no-repeat;
+	}
+	.order-menu .order-group .order-group-box {
+		width: 290px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items {
+		height: 263px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-price {
+		right: -54px;
+	}
+	.article .title-area .title {
+		width: 554px;
+	}
+	
+	.gallery {
+		max-width: 96%;
+		margin: 0 auto;
+	}
+	.gallery .gallery-group {
+		width: 352px;
+		height: 480px;
+		background-size: 100%;
+	}
+	.gallery .gallery-group .gallery-group-box {
+		height: 400px;
+		width: 275px;
+	}
+	p {
+		font-size: 12px;
+	}
+	.gallery-filter {
+		padding-top: 20px;
+	}
+	nav{
+		display: none;
+	}
+	.first-section {
+		padding: 20px 0px 0px;
+		height: auto;
+	}
+}
+@media screen and (min-width:600px) and (max-width: 767px){
+	.board .center{
+		max-width: 100%;
+	}
+	.board .excerpt{
+		font-size: 11px;
+	}
+	.container {
+		max-width: 560px;
+		margin: 0 20px;
+	}
+	.about-ss {
+		max-width: 100%;
+		width: 100%;
+	}
+	.about-ss p{
+		padding-right: 0px;
+	}
+	.wardrobe{
+		width: 100%;
+		max-width: 100%;
+	}
+	.wardrobe img{
+		display: block;
+		margin: 0 auto;
+	}
+	.gallery-container{
+		max-width: 100%;
+	}
+	.absolute-container{
+		width: 560px;
+	}
+	.bigItemOfWeekText{
+		font-size: 26px;
+		margin-bottom: 0px;
+	}
+	.itemName{
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+	.board .excerpt{
+		font-size: 9px;
+	}
+	.absolute-container .col6 .featured-image-border{
+		width: 211px;
+		height: 121px;
+		margin-top: 20px;
+	}
+	.absolute-container .col6 .featured-image-border img {
+		margin-bottom: 20px;
+		width: 86%;
+	}
+	.absolute-container .col6 .featured-image-border .over {
+		width: 100%;
+		height: 159px;
+		position: absolute;
+		background: url(images/item-border.png);
+		top: -13px;
+		left: -15px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.contact-area .address{
+		width: 100%;
+		max-width: 100%;
+	}
+	.contact-area .address .location:nth-child(n+2) {
+		margin-left: 34px;
+	}
+	.contact-area .contact{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	footer .footer-left{
+		width: 255px;
+	}
+	nav.footer-nav{
+		display: none;
+	}
+	.footer-title {
+		font-size: 20px;
+		margin-top: 50px;
+		word-spacing: 0px;
+	}
+	.menu-left .menu-group {
+		width: 388px;
+		height: 460px;
+		background-size: 100%;
+	}
+	.menu-left .menu-group .menu-group-box {
+		width: 310px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items{
+		height: 260px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-name{
+		font-size: 18px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-price{
+		font-size: 18px;
+	}
+	.menu-right .menu-right-item-image img {
+		max-width: 50%;
+	}
+	.menu-right .menu-right-item-title {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.order-menu .order-group {
+		width: 276px;
+		height: 352px;
+		background-size: 100%;
+	}
+	.order-menu .order-group.active{
+		width: 276px;
+		height: 130px;
+		background-size: 100% !important;
+		background: url(images/menu.png) 0px -349px no-repeat;
+	}
+	.order-menu .order-group .order-group-box {
+		width: 218px;
+		margin: 36px auto;
+	}
+	.order-menu .order-group .order-group-box .order-menu-name{
+		font-size: 30px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items {
+		height: 196px;
+		width: 82%;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-price {
+		right: -42px;
+		top: 2px;
+		font-size: 18px;
+	}
+	.article .title-area .title {
+		width: 400px;
+	}
+	
+	.gallery {
+		max-width: 96%;
+		margin: 0 auto;
+	}
+	.gallery .gallery-group {
+		width: 272px;
+		height: 370px;
+		background-size: 100%;
+	}
+	.gallery .gallery-group .gallery-group-box {
+		height: 300px;
+		width: 216px;
+	}
+	.gallery .gallery-group .gallery-group-box .gallery-group-box-thumb img{
+		height: auto;
+	}
+	.gallery .gallery-group .gallery-group-box .gallery-group-box-area .gallery-group-box-area-title a h1{
+		font-size: 18px;
+	}
+	.gallery .gallery-group .gallery-group-box .gallery-group-box-area .desc{
+		height: 60px;
+		overflow: hidden;
+	}
+	p {
+		font-size: 12px;
+	}
+	.gallery-filter {
+		padding-top: 20px;
+	}
+	nav{
+		display: none;
+	}
+	.first-section {
+		padding: 20px 0px 0px;
+		height: auto;
+	}
+}
+@media screen and (min-width:320px) and (max-width: 559px){
+	.board .center{
+		max-width: 100%;
+	}
+	.board .excerpt{
+		font-size: 11px;
+	}
+	.container {
+		max-width: 280px;
+		margin: 0 20px;
+	}
+	.about-ss {
+		max-width: 100%;
+		width: 100%;
+	}
+	.about-ss p{
+		padding-right: 0px;
+	}
+	.wardrobe{
+		width: 100%;
+		max-width: 100%;
+		margin-right: 0px;
+		height: 210px;
+	}
+	.wardrobe img{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+	}
+	map{
+		display: none;
+	}
+	.second-section{
+		display: none;
+	}
+
+	.gallery-container{
+		max-width: 100%;
+	}
+	.absolute-container{
+		width: 560px;
+	}
+	.bigItemOfWeekText{
+		font-size: 26px;
+		margin-bottom: 0px;
+	}
+	.itemName{
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+	.board .excerpt{
+		font-size: 9px;
+	}
+	.absolute-container .col6 .featured-image-border{
+		width: 211px;
+		height: 121px;
+		margin-top: 20px;
+	}
+	.absolute-container .col6 .featured-image-border img {
+		margin-bottom: 20px;
+		width: 86%;
+	}
+	.absolute-container .col6 .featured-image-border .over {
+		width: 100%;
+		height: 159px;
+		position: absolute;
+		background: url(images/item-border.png);
+		top: -13px;
+		left: -15px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.contact-area .address .location{
+		float: none;
+		margin: 0 auto;
+	}
+	.contact-area .address{
+		width: 100%;
+		max-width: 100%;
+	}
+	.contact-area .address .location:nth-child(n+2) {
+		float: none;
+		margin: 0 auto;
+	}
+	.contact-area .contact{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	nav.footer-nav{
+		display: none;
+	}
+	.footer-title {
+		font-size: 20px;
+		margin-top: 50px;
+		word-spacing: 0px;
+	}
+	.menu-left .menu-group {
+		width: 280px;
+		height: 336px;
+		background-size: 100%;
+	}
+	.menu-left .menu-group .menu-group-box {
+		width: 230px;
+		margin: 40px auto;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items{
+		height: 158px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-name{
+		font-size: 18px;
+	}
+	.menu-left .menu-group .menu-group-box .menu-items .menu-item-price{
+		font-size: 18px;
+	}
+	.menu-right{
+		width: 100%;
+		left: 0px; 
+	}
+	.menu-right .menu-right-item {
+		cursor: pointer;
+		width: 92px;
+		float: left;
+	}
+	.menu-right .menu-right-item-image img {
+		max-width: 50%;
+	}
+	.menu-right .menu-right-item-title {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.order-menu .order-group {
+		width: 276px;
+		height: 352px;
+		background-size: 100%;
+	}
+	.order-menu .order-group.active{
+		width: 276px;
+		height: 130px;
+		background-size: 100% !important;
+		background: url(images/menu.png) 0px -349px no-repeat;
+	}
+	.order-menu .order-group .order-group-box {
+		width: 218px;
+		margin: 36px auto;
+	}
+	.order-menu .order-group .order-group-box .order-menu-name{
+		font-size: 30px;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items {
+		height: 196px;
+		width: 82%;
+	}
+	.order-menu .order-group .order-group-box .order-menu-items .orfer-menu-item-price {
+		right: -42px;
+		top: 2px;
+		font-size: 18px;
+	}
+	.article .title-area .title {
+		width: 100%;
+	}
+	.article .title-area .activity{
+		width: 100%;
+	}
+	.gallery-filter{
+		text-align: left;
+	}
+	.gallery-filter .filter{
+		text-indent: 0px;
+	}
+	.gallery-filter .filter.all{
+		width: auto;
+		height: auto;
+		background: none;
+	}
+	.gallery-filter .filter.all:hover{
+		background: none;
+	}
+	.gallery-filter .filter.all.active{
+		background: none;
+	}
+	.gallery-filter .filter.one{
+		width: auto;
+		height: auto;
+		background: none;
+	}
+	.gallery-filter .filter.one:hover{
+		background: none;
+	}
+	.gallery-filter .filter.one.active{
+		background: none;
+	}
+	.gallery-filter .filter.two{
+		width: auto;
+		height: auto;
+		background: none;
+	}
+	.gallery-filter .filter.two:hover{
+		background: none;
+	}
+	.gallery-filter .filter.two.active{
+		background: none;
+	}
+	.gallery-filter .filter.three{
+		width: auto;
+		height: auto;
+		background: none;
+	}
+	.gallery-filter .filter.three:hover{
+		background: none;
+	}
+	.gallery-filter .filter.three.active{
+		background: none;
+	}
+	.gallery-filter .filter.four{
+		width: auto;
+		height: auto;
+		background: none;
+	}
+	.gallery-filter .filter.four:hover{
+		background: none;
+	}
+	.gallery-filter .filter.four.active{
+		background: none;
+	}
+	.gallery-filter .filter.active{
+		color:#6c3283;
+	}
+	.gallery {
+		max-width: 85%;
+		margin: 0 auto;
+	}
+	.gallery .gallery-group {
+		width: 272px;
+		height: 370px;
+		background-size: 100%;
+	}
+	.gallery .gallery-group .gallery-group-box {
+		height: 300px;
+		width: 216px;
+	}
+	.gallery .gallery-group .gallery-group-box .gallery-group-box-thumb img{
+		height: auto;
+	}
+	.gallery .gallery-group .gallery-group-box .gallery-group-box-area .gallery-group-box-area-title a h1{
+		font-size: 18px;
+	}
+	.gallery .gallery-group .gallery-group-box .gallery-group-box-area .desc{
+		height: 60px;
+		overflow: hidden;
+	}
+	p {
+		font-size: 12px;
+	}
+	.gallery-filter {
+		padding-top: 20px;
+	}
+	nav{
+		display: none;
+	}
+	.first-section {
+		padding: 20px 0px 0px;
+		height: auto;
+	}
+	footer .footer-right{
+		width: 288px;
+	}
+	footer .footer-left {
+		display: none;
+	}
+	footer .footer-right .social{
+		margin-left: 0px;
+	}
+	.contact-area .contact {
+		width: 280px;
+		float: left;
+		height: auto;
+		margin-left: 0px;
+	}
+	.contact .textbox {
+		width: 140px;
+		height: 52px;
+		float: left;
+		background: url(images/textbox.png) center center no-repeat;
+		background-size: 100%;
+	}
+	.contact .textarea {
+		width: 280px;
+		height: 97px;
+		float: left;
+		background: url(images/textarea.png) center center no-repeat;
+		margin-top: -4px;
+		background-size: 100%;
+	}
+}
