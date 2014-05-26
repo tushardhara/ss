@@ -21,18 +21,18 @@
 			$('.contact-down a,.contact-bottom a').click( function(event) {        
 		        event.preventDefault();
 		        var href= $(this).attr('href').replace("http://ss.mizalabs.com/",'');
-		        $.scrollTo(href,2000, { easing: 'swing' , offset: -1 , 'axis':'y' } );      
+		        $.scrollTo(href,1000, { easing: 'swing' , offset: -1 , 'axis':'y' } );      
 		  	});
 
 		  	$('.contact-go').click( function(event) {        
 		        event.preventDefault();
 		        var href= $(this).attr('href').replace("http://ss.mizalabs.com/",'');
-		        $.scrollTo( href ,2000, { easing: 'swing' , offset: -1 , 'axis':'y' } );      
+		        $.scrollTo( href ,1000, { easing: 'swing' , offset: -1 , 'axis':'y' } );      
 		  	});
 		  	$('.about-go a').click(function(event){
 		  		event.preventDefault();
 		  		var href= $(this).attr('href').replace("http://ss.mizalabs.com/",'');
-		  		$.scrollTo( href ,2000, { easing: 'swing' , offset: -1 , 'axis':'y' } );
+		  		$.scrollTo( href ,1000, { easing: 'swing' , offset: -1 , 'axis':'y' } );
 		  	});
 		  	  /* placeholder fix for older browser */
             if( !Modernizr.csstransforms3d ) {

@@ -10,7 +10,7 @@ get_header(); ?>
 					<h1 class="big-title "><span>Who is</span><span>Sugar and Spice</span></h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra nulla sit amet arcu tincidunt, et eleifend mauris tempus. Etiam ac scelerisque turpis, at posuere.<br/><br/>
 					Quisque nisl elit, accumsan a tristique non, elementum nec libero. Morbi imperdiet, lectus non cursus molestie, eros nisi accumsan odio, eget porta quam sem vitae risus.lectus non cursus molestie, eros nisi accumsan odio, eget porta quam sem vitae risus.<br/><br/>
-					Quisque nisl elit, accumsan a tristique non, elementum nec libero. Morbi imperdiet, lectus non cursus molestie, eros nisi accumsan odio, eget porta quam sem vitae risus.
+					Quisque nisl elit, accumsan a tristique non, elementum nec libero. Morbi imperdiet, 
 					</p>
 				</div>
 				<div class="wardrobe">

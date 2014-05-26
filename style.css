@@ -368,7 +368,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin: 4px 0;
 	}
 	.first-section{
-		padding: 76px 0px 0px;
+		padding: 25px 0px 0px;
 		height: auto;
 	}
 	.wardrobe{
@@ -383,10 +383,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}
 	.about-ss p{
 		font-family: "Throw My Hands Up in the Air Bold";
-		font-weight: bold;
-		font-size: 15px;
+font-weight: bold;
+font-size: 15px;
 padding-right: 87px;
-text-align: justify;
+text-align: left;
+padding-left: 7px;
 	}
 	.contact-desc{
 		font-family: "Throw My Hands Up in the Air Bold";
@@ -932,14 +933,14 @@ left: -15px;
 	.order-menu .order-group .order-group-box .order-menu-name .menu-toggle-icon{
 		width: 38px;
 		height: 37px;
-		background: url(images/toggle-menu.png) -39px 0px no-repeat;
+		background: url(images/toggle-menu.png) 1px 0px no-repeat;
 		display: block;
 		float: right;
 		position: relative;
 		cursor: pointer;
 	}
 	.order-menu .order-group .order-group-box .order-menu-name .menu-toggle-icon.active{
-		background: url(images/toggle-menu.png) 1px 0px no-repeat;
+		background: url(images/toggle-menu.png) -39px 0px no-repeat;
 	}
 	.order-menu .order-group .order-group-box .order-menu-items{
 		height: 429px;
@@ -1018,6 +1019,7 @@ left: -15px;
 		margin-top: 3px;
 		position: relative;
 		left: 18px;
+		top: 23px;
 	}
 	.menu-right .menu-right-item{
 		cursor: pointer;
@@ -1047,8 +1049,8 @@ left: -15px;
 	}
 	.menu-left .menu-group{
 		width: 769px;
-		height: 901px;
-		background: url(images/menu-big.png) 0px 0px no-repeat;
+		height: 1076px;
+		background: url(images/menu-big.png) -18px 0px no-repeat;
 		display: block;
 		float: left;
 		margin-bottom: 40px;
@@ -1059,7 +1061,7 @@ left: -15px;
 	.menu-left .menu-group .menu-group-box{
 		height: auto;
 		width: 600px;
-		margin: 75px auto;
+		margin: 130px auto;
 	}
 	.menu-left .menu-group .menu-group-box{
 		display: none;
@@ -1076,7 +1078,7 @@ left: -15px;
 		width: 100%;
 	}
 	.menu-left .menu-group .menu-group-box .menu-items{
-		height: 650px;
+		height: 750px;
 		overflow-y: scroll;
 		float: left;
 		width: 87%;
@@ -1199,7 +1201,7 @@ left: -15px;
 }
 .gallery .gallery-group{
 		width: 389px;
-		height: 532px;
+		height: 448px;
 		background: url(images/gallery-bg.png) 0px 0px no-repeat;
 		display: block;
 		float: left;
@@ -1210,9 +1212,9 @@ left: -15px;
 	margin-right: 0px;
 }
 .gallery .gallery-group .gallery-group-box{
-	height: 450px;
+	height: 348px;
 	width: 300px;
-	margin: 35px auto;
+	margin: 46px auto;
 	background: #fff;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -1243,7 +1245,7 @@ width: 100%;
 	text-decoration: none;
 }
 .gallery .gallery-group .gallery-group-box .gallery-group-box-area .gallery-group-box-area-title a h1{
-	font-size: 29px;
+	font-size: 25px;
 	font-family: "Throw My Hands Up in the Air Bold";
 	font-weight: bold;
 	color: #6c3283;
@@ -1354,10 +1356,10 @@ width: 100%;
 	background: url(images/tabs.png) -18px -6px no-repeat;
 }
 .gallery-filter .filter.all:hover{
-	background: url(images/tabs.png) -18px -129px no-repeat;
+	background: url(images/tabs.png) -18px -128px no-repeat;
 }
 .gallery-filter .filter.all.active{
-	background: url(images/tabs.png) -18px -129px no-repeat;
+	background: url(images/tabs.png) -18px -128px no-repeat;
 }
 .gallery-filter .filter.one{
 	width: 138px;
@@ -1365,10 +1367,10 @@ width: 100%;
 	background: url(images/tabs.png) -205px -6px no-repeat;
 }
 .gallery-filter .filter.one:hover{
-	background: url(images/tabs.png) -205px -129px no-repeat;
+	background: url(images/tabs.png) -205px -128px no-repeat;
 }
 .gallery-filter .filter.one.active{
-	background: url(images/tabs.png) -205px -129px no-repeat;
+	background: url(images/tabs.png) -205px -128px no-repeat;
 }
 .gallery-filter .filter.two{
 	width: 170px;
@@ -1376,10 +1378,10 @@ width: 100%;
 	background: url(images/tabs.png) -405px -6px no-repeat;
 }
 .gallery-filter .filter.two:hover{
-	background: url(images/tabs.png) -405px -129px no-repeat;
+	background: url(images/tabs.png) -405px -128px no-repeat;
 }
 .gallery-filter .filter.two.active{
-	background: url(images/tabs.png) -405px -129px no-repeat;
+	background: url(images/tabs.png) -405px -128px no-repeat;
 }
 .gallery-filter .filter.three{
 	width: 170px;
@@ -1387,10 +1389,10 @@ width: 100%;
 	background: url(images/tabs.png) -627px -6px no-repeat;
 }
 .gallery-filter .filter.three:hover{
-	background: url(images/tabs.png) -627px -129px no-repeat;
+	background: url(images/tabs.png) -627px -128px no-repeat;
 }
 .gallery-filter .filter.three.active{
-	background: url(images/tabs.png) -627px -129px no-repeat;
+	background: url(images/tabs.png) -627px -128px no-repeat;
 }
 .gallery-filter .filter.four{
 	width: 170px;
@@ -1398,10 +1400,10 @@ width: 100%;
 	background: url(images/tabs.png) -886px -6px no-repeat;
 }
 .gallery-filter .filter.four:hover{
-	background: url(images/tabs.png) -886px -129px no-repeat;
+	background: url(images/tabs.png) -886px -128px no-repeat;
 }
 .gallery-filter .filter.four.active{
-	background: url(images/tabs.png) -886px -129px no-repeat;
+	background: url(images/tabs.png) -886px -128px no-repeat;
 }
 .gallery-filter .filter:after {
   content: '';
@@ -1433,7 +1435,186 @@ width: 100%;
 }
 .fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
 .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #f5ede2;
+	position: fixed;
+}
 
+.cbp-spmenu h3 {
+	color: #fff;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #6c3283;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.cbp-spmenu a:hover {
+	background: #6c3283;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+	margin-top: 0px;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #6c3283;
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#showLeftPush{
+	display: none;
+	background: url(images/toggle-nav.png) 0 0 no-repeat;
+	width: 52px;
+	height: 47px;
+	border: none;
+	padding: 0;
+	text-indent: -99999px;
+	outline: none;
+float: left;
+margin-top: 20px;
+}
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
 @media screen and (min-width:1024px) and (max-width: 1279px){
 	.board .center{
 		max-width: 100%;
@@ -1579,11 +1760,11 @@ width: 100%;
 	}
 	.gallery .gallery-group {
 		width: 352px;
-		height: 480px;
+		height: 420px;
 		background-size: 100%;
 	}
 	.gallery .gallery-group .gallery-group-box {
-		height: 400px;
+		height: 322px;
 		width: 275px;
 	}
 	p {
@@ -1592,12 +1773,18 @@ width: 100%;
 	.gallery-filter {
 		padding-top: 20px;
 	}
-	nav{
+	nav.menu-left-container,nav.menu-right-container{
 		display: none;
 	}
 	.first-section {
 		padding: 20px 0px 0px;
 		height: auto;
+	}
+	#showLeftPush{
+		display: block;
+	}
+	.logo{
+		float: right;
 	}
 }
 @media screen and (min-width:600px) and (max-width: 767px){
@@ -1745,12 +1932,13 @@ width: 100%;
 	}
 	.gallery .gallery-group {
 		width: 272px;
-		height: 370px;
+		height: 320px;
 		background-size: 100%;
 	}
 	.gallery .gallery-group .gallery-group-box {
-		height: 300px;
+		height: 267px;
 		width: 216px;
+		margin: 26px auto;
 	}
 	.gallery .gallery-group .gallery-group-box .gallery-group-box-thumb img{
 		height: auto;
@@ -1768,15 +1956,21 @@ width: 100%;
 	.gallery-filter {
 		padding-top: 20px;
 	}
-	nav{
+	nav.menu-left-container,nav.menu-right-container{
 		display: none;
 	}
 	.first-section {
 		padding: 20px 0px 0px;
 		height: auto;
 	}
+	#showLeftPush{
+		display: block;
+	}
+	.logo{
+		float: right;
+	}
 }
-@media screen and (min-width:320px) and (max-width: 559px){
+@media screen and (min-width:320px) and (max-width: 599px){
 	.board .center{
 		max-width: 100%;
 	}
@@ -1785,7 +1979,7 @@ width: 100%;
 	}
 	.container {
 		max-width: 280px;
-		margin: 0 20px;
+		margin: 0 auto;
 	}
 	.about-ss {
 		max-width: 100%;
@@ -2010,12 +2204,13 @@ width: 100%;
 	}
 	.gallery .gallery-group {
 		width: 272px;
-		height: 370px;
+		height: 318px;
 		background-size: 100%;
 	}
 	.gallery .gallery-group .gallery-group-box {
-		height: 300px;
+		height: 267px;
 		width: 216px;
+		margin: 28px auto;
 	}
 	.gallery .gallery-group .gallery-group-box .gallery-group-box-thumb img{
 		height: auto;
@@ -2033,7 +2228,7 @@ width: 100%;
 	.gallery-filter {
 		padding-top: 20px;
 	}
-	nav{
+	nav.menu-left-container,nav.menu-right-container{
 		display: none;
 	}
 	.first-section {
@@ -2069,5 +2264,11 @@ width: 100%;
 		background: url(images/textarea.png) center center no-repeat;
 		margin-top: -4px;
 		background-size: 100%;
+	}
+	#showLeftPush{
+		display: block;
+	}
+	.logo{
+		float: right;
 	}
 }

@@ -33,6 +33,15 @@
         }
       }
     );
-    $('#gallery').mixitup();
-   
+    var $gcontainer=$('#gallery');
+	$gcontainer.infinitescroll({
+      navSelector  : '.wp-pagenavi',    // selector for the paged navigation 
+      nextSelector : '.wp-pagenavi a.nextpostslink',  // selector for the NEXT link (to page 2)
+      itemSelector : '.gallery-group',     // selector for all items you'll retrieve
+      loading: {
+          finishedMsg: 'No page to load',
+          img: 'http://i.imgur.com/PHGwVV7.gif'
+        }
+      }
+    );
 })(jQuery);
