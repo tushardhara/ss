@@ -744,7 +744,7 @@ left: -15px;
 
 	}
 	nav.footer-nav li a:hover{
-		color: #7dff8d;
+		color: #fefe97;
 	}
 	.article:nth-child(-n+1){
 		padding-top: 40px;
@@ -1160,7 +1160,7 @@ left: -15px;
     Safari 6+ iOS,
     Opera 15+
   */
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) brightness(100%) contrast(70%);
 }
 .grayscale.fade {
   -webkit-transition: -webkit-filter .5s;
@@ -1192,6 +1192,7 @@ left: -15px;
 	margin: 0 auto;
 	width: 1200px;
 	height: auto;
+	padding-bottom: 100px;
 }
 .gallery{
 	width: 100%;
@@ -1427,7 +1428,7 @@ width: 100%;
 	font-weight: bold;
 }
 .success-message{
-	color: #7dff8d;
+	color: #fefe97;
 }
 .alert-message{
 	color: #ffa000;

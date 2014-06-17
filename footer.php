@@ -5,20 +5,23 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'footer','container_class' => 'footer-nav','container' => 'nav','items_wrap'      => '%3$s') ); ?>
 			</div>
 			<div class="footer-right">
-            <audio controls id='player_audio' autoplay loop>
+            <?php if ( $_SERVER[REQUEST_URI] !='/word-around-town/') { ?>
+            <audio controls id='player_audio'  loop  autoplay>
               <source src="<?php echo THEMEROOT?>/audio/stardust.ogg" type="audio/ogg">
               <source src="<?php echo THEMEROOT?>/audio/stardust.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
+            <?php } ?>
             <div class="gramaphone"></div>
 				<div class="social">
+               <li><a href="http://www.facebook.com/SugarandSpiceQatar" target="_blank" class="facebook"></a></li>   
 					<li><a href="https://twitter.com/sugarandspiceQA" target="_blank" class="twitter"></a></li>
 					<li><a href="#" class="instragram"></a></li>	
-					<li><a href="http://www.facebook.com/SugarandSpiceQatar" target="_blank" class="facebook"></a></li>		
 				</div>
 			</div>
 		</div>
 	</footer>
+
 	<?php wp_footer();?>
 	<?php
       if ( is_page('home') ) {?>

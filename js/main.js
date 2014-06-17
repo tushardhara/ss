@@ -45,16 +45,25 @@
       }
     );
     $('#gallery').mixitup();
+    var value = $.jStorage.get("music");
+	if(value=='off'){
+		var audio=document.getElementById("player_audio");
+		audio.pause();
+	}
+
     $('.gramaphone').on('click',function() {
 	  var audio=document.getElementById("player_audio");
 	  if (audio.paused == false) {
 	      audio.pause();
 	      console.log('music paused');
+	      $.jStorage.set("music",'off');
 	  } else {
 	      audio.play();
 	      console.log('music playing');
+	      $.jStorage.set("music",'on');
 	  }
 	});
+	
 	var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 		showLeftPush = document.getElementById( 'showLeftPush' ),
 		body = document.body;

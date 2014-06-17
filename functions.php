@@ -43,6 +43,8 @@ function ss_assets() {
 		wp_enqueue_script('jquery');
 		wp_enqueue_style( 'styles', get_template_directory_uri().'/style.css',false,'0.0.0.1', 'all' );
 		// Load JavaScripts jquery.fitvids
+		wp_enqueue_script( 'json', '//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js',false,null, true );
+		wp_enqueue_script( 'jStorage', get_template_directory_uri().'/js/jstorage.js',false,null, true );
 		wp_enqueue_script('modernizr', get_template_directory_uri().'/js/modernizr.js', false, '2.6.2', true);
 		wp_enqueue_script('easing', get_template_directory_uri().'/js/jquery.easing.1.3.js',false,'1.3',true);
 		wp_enqueue_script('mixitup',get_template_directory_uri().'/js/jquery.mixitup.min.js',false,'1.5.5',true);
