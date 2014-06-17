@@ -1,16 +1,16 @@
 <footer>
 		<div class="container clearfix">
 			<div class="footer-left">
-                        <audio controls id='player_audio' autoplay loop>
-                          <source src="<?php echo THEMEROOT?>/audio/stardust.ogg" type="audio/ogg">
-                          <source src="<?php echo THEMEROOT?>/audio/stardust.mp3" type="audio/mpeg">
-                          Your browser does not support the audio element.
-                        </audio>
-                        <div class="gramaphone"></div>
 				<h1 class="footer-title ">Get our Daily News by joining our</h1>
 				<?php wp_nav_menu( array( 'theme_location' => 'footer','container_class' => 'footer-nav','container' => 'nav','items_wrap'      => '%3$s') ); ?>
 			</div>
 			<div class="footer-right">
+            <audio controls id='player_audio' autoplay loop>
+              <source src="<?php echo THEMEROOT?>/audio/stardust.ogg" type="audio/ogg">
+              <source src="<?php echo THEMEROOT?>/audio/stardust.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="gramaphone"></div>
 				<div class="social">
 					<li><a href="https://twitter.com/sugarandspiceQA" target="_blank" class="twitter"></a></li>
 					<li><a href="#" class="instragram"></a></li>	
