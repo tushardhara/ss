@@ -1,6 +1,12 @@
 <footer>
 		<div class="container clearfix">
 			<div class="footer-left">
+                        <audio controls id='player_audio' autoplay loop>
+                          <source src="<?php echo THEMEROOT?>/audio/stardust.ogg" type="audio/ogg">
+                          <source src="<?php echo THEMEROOT?>/audio/stardust.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                        <div class="gramaphone"></div>
 				<h1 class="footer-title ">Get our Daily News by joining our</h1>
 				<?php wp_nav_menu( array( 'theme_location' => 'footer','container_class' => 'footer-nav','container' => 'nav','items_wrap'      => '%3$s') ); ?>
 			</div>

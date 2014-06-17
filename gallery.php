@@ -8,16 +8,15 @@ get_header(); ?>
 			<div class="gallery-filter">
 				<div class="filter all active" data-filter="all">All</div>
 				<div class="filter one" data-filter="menus">Menu</div>
-				<div class="filter two" data-filter="communities">Community</div>
-				<div class="filter three" data-filter="shops">Our Shop</div>
-				<div class="filter four" data-filter="our-people">Our People</div>
+				<div class="filter two" data-filter="order-menus">By Order</div>
+				<div class="filter three" data-filter="our-world">Our world</div>
 			</div>
 			<?php
 			$loop = new WP_Query( array( 'post_type' => array( 'menus','order-menus','shops','communities','our-people' ), 'posts_per_page' => -1) );?>
 			<div class="gallery clearfix" id="gallery">
 			<?php
 			while ( $loop->have_posts() ) : $loop->the_post();?>
-				<div class="mix gallery-group <?php echo $post->post_type=='menus'||$post->post_type=='order-menus' ? 'menus': $post->post_type;?>">
+				<div class="mix gallery-group <?php echo $post->post_type=='shops'||$post->post_type=='communities'||$post_type=='our-people' ? 'our-world': $post->post_type;?>">
 						<div class="gallery-group-box">
 							<div class="gallery-group-box-thumb">
 							<a href="<?php echo get_permalink( $post->ID ) ?>" title="<?php echo $post->post_title;?>">

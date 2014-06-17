@@ -18,11 +18,11 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary-right','container' => 'nav') ); ?>
 			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 				<h3>Menu</h3>
-				<a href="<?php site_url()?>">Home</a>
-				<a href="<?php site_url('our-menu')?>">Our Menu</a>
-				<a href="<?php site_url('order-menu')?>">Order Menu</a>
-				<a href="<?php site_url('word-around-town')?>">Word around town</a>
-				<a href="<?php site_url('gallery')?>">Gallery</a>
+				<a href="<?php echo site_url()?>">Home</a>
+				<a href="<?php echo site_url('our-menu')?>">Our Menu</a>
+				<a href="<?php echo site_url('order-menu')?>">Order Menu</a>
+				<a href="<?php echo site_url('word-around-town')?>">Word around town</a>
+				<a href="<?php echo site_url('gallery')?>">Gallery</a>
 			</nav>
 		</div>
 	</header>

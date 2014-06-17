@@ -88,7 +88,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	table {
 		border-collapse: collapse;
 		border-spacing: 0; }
-
+	area{
+		outline: none;
+	}
 /* #Basic Styles
 ================================================== */
 	body {
@@ -702,7 +704,7 @@ left: -15px;
 		background: url(images/social.png) -24px -7px no-repeat;
 	}
 	footer .footer-right .social li a.facebook:hover{
-		background: url(images/social.png) -21px -104px no-repeat;	
+		background: url(images/social.png) -24px -111px no-repeat;
 	}
 	footer .footer-right .social li a.twitter{
 		width: 79px;
@@ -711,7 +713,7 @@ left: -15px;
 		background: url(images/social.png) -122px -7px no-repeat;
 	}
 	footer .footer-right .social li a.twitter:hover{
-		background: url(images/social.png) -119px -104px no-repeat;
+		background: url(images/social.png) -122px -111px no-repeat;
 	}
 	footer .footer-right .social li a.instragram{
 		width: 79px;
@@ -720,7 +722,7 @@ left: -15px;
 		background: url(images/social.png) -227px -7px no-repeat;
 	}
 	footer .footer-right .social li a.instragram:hover{
-		background: url(images/social.png) -224px -104px no-repeat;
+		background: url(images/social.png) -227px -111px no-repeat
 	}
 	nav.footer-nav{
 		float: left;
@@ -821,7 +823,7 @@ left: -15px;
 		left: 10px;
 	}
 	.show-comment.active{
-		color: #b6f8bf;
+		color:  #fefe97;
 	}
 	.show-comment.active .icon{
 		background: url(images/comment-icon.png) -24px 0px no-repeat;
@@ -841,7 +843,7 @@ left: -15px;
 			color: #2c2c2c;
 	}
 	.read .icon{
-		background: url(images/read.png) 0px 0px no-repeat;
+		background: url(images/read.png) -2px -2px no-repeat;
 		height: 23px;
 		width: 22px;
 		display: inline-block;
@@ -851,10 +853,10 @@ left: -15px;
 		margin-left: 5px;
 	}
 	.read a:hover{
-		color: #2d951c;
+		color: #fefe97;
 	}
 	.read a:hover .icon{
-		background: url(images/read.png) -24px 0px no-repeat;
+		background: url(images/read.png) -31px -2px no-repeat;
 	}
 	.back{
 		line-height: 1.2;
@@ -871,7 +873,7 @@ left: -15px;
 		color: #2c2c2c;
 	}
 	.back .icon{
-		background: url(images/back.png) 0px 0px no-repeat;
+		background: url(images/back.png) -3px -1px no-repeat;
 		height: 23px;
 		width: 22px;
 		display: inline-block;
@@ -881,10 +883,10 @@ left: -15px;
 		margin-right: 5px;
 	}
 	.back a:hover{
-		color: #2d951c;
+		color: #fefe97;
 	}
 	.back a:hover .icon{
-		background: url(images/back.png) -24px 0px no-repeat;
+		background: url(images/back.png) -31px -1px no-repeat;
 	}
 	.order-title{
 		font-size: 64px;
@@ -933,14 +935,14 @@ left: -15px;
 	.order-menu .order-group .order-group-box .order-menu-name .menu-toggle-icon{
 		width: 38px;
 		height: 37px;
-		background: url(images/toggle-menu.png) 1px 0px no-repeat;
+		background: url(images/toggle-menu.png) -5px -3px no-repeat;
 		display: block;
 		float: right;
 		position: relative;
 		cursor: pointer;
 	}
 	.order-menu .order-group .order-group-box .order-menu-name .menu-toggle-icon.active{
-		background: url(images/toggle-menu.png) -39px 0px no-repeat;
+		background: url(images/toggle-menu.png) -44px -3px no-repeat;
 	}
 	.order-menu .order-group .order-group-box .order-menu-items{
 		height: 429px;
@@ -1277,7 +1279,7 @@ width: 100%;
 }
 .gallery .gallery-group .gallery-group-box .read-more a:hover{
 	text-decoration: none;
-	color: #2d951c;
+	color: #fefe97;
 }
 .gallery .gallery-group .gallery-group-box .share span{
 	color: #000;
@@ -1338,7 +1340,7 @@ width: 100%;
 	text-align: justify;
 	width: 100%;
 	display: block;
-	max-width: 900px;
+	max-width: 500px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
@@ -1351,9 +1353,9 @@ width: 100%;
 
 }
 .gallery-filter .filter.all{
-	width: 124px;
+	width: 80px;
 	height: 57px;
-	background: url(images/tabs.png) -18px -6px no-repeat;
+	background: url(images/tabs.png) -18px -43px no-repeat;
 }
 .gallery-filter .filter.all:hover{
 	background: url(images/tabs.png) -18px -128px no-repeat;
@@ -1362,37 +1364,37 @@ width: 100%;
 	background: url(images/tabs.png) -18px -128px no-repeat;
 }
 .gallery-filter .filter.one{
-	width: 138px;
+	width: 93px;
 	height: 57px;
-	background: url(images/tabs.png) -205px -6px no-repeat;
+	background: url(images/tabs.png) -164px -43px no-repeat;
 }
 .gallery-filter .filter.one:hover{
-	background: url(images/tabs.png) -205px -128px no-repeat;
+	background: url(images/tabs.png) -164px -128px no-repeat;
 }
 .gallery-filter .filter.one.active{
-	background: url(images/tabs.png) -205px -128px no-repeat;
+	background: url(images/tabs.png) -164px -128px no-repeat;
 }
 .gallery-filter .filter.two{
-	width: 170px;
+	width: 115px;
 	height: 57px;
-	background: url(images/tabs.png) -405px -6px no-repeat;
+	background: url(images/tabs.png) -312px -43px no-repeat;
 }
 .gallery-filter .filter.two:hover{
-	background: url(images/tabs.png) -405px -128px no-repeat;
+	background: url(images/tabs.png) -312px -128px no-repeat;
 }
 .gallery-filter .filter.two.active{
-	background: url(images/tabs.png) -405px -128px no-repeat;
+	background: url(images/tabs.png) -312px -128px no-repeat;
 }
 .gallery-filter .filter.three{
-	width: 170px;
+	width: 113px;
 	height: 57px;
-	background: url(images/tabs.png) -627px -6px no-repeat;
+	background: url(images/tabs.png) -491px -43px no-repeat;
 }
 .gallery-filter .filter.three:hover{
-	background: url(images/tabs.png) -627px -128px no-repeat;
+	background: url(images/tabs.png) -491px -128px no-repeat;
 }
 .gallery-filter .filter.three.active{
-	background: url(images/tabs.png) -627px -128px no-repeat;
+	background: url(images/tabs.png) -491px -128px no-repeat;
 }
 .gallery-filter .filter.four{
 	width: 170px;
@@ -1452,7 +1454,7 @@ width: 100%;
 
 .cbp-spmenu a {
 	display: block;
-	color: #fff;
+	color: #6c3283;
 	font-size: 1.1em;
 	font-weight: 300;
 	text-decoration: none;
@@ -1460,6 +1462,7 @@ width: 100%;
 
 .cbp-spmenu a:hover {
 	background: #6c3283;
+	color: #fff;
 }
 
 .cbp-spmenu a:active {
@@ -1575,6 +1578,19 @@ width: 100%;
 	outline: none;
 float: left;
 margin-top: 20px;
+}
+
+audio{
+	display: none;
+}
+.gramaphone{
+	position: absolute;
+	left: -96px;
+	width: 94px;
+	height: 99px;
+	background: url(images/sound-icon.png) 0 0 no-repeat;
+	top: -69px;
+	cursor: pointer;
 }
 /* Example media queries */
 
@@ -2069,8 +2085,10 @@ margin-top: 20px;
 	}
 	.menu-left .menu-group {
 		width: 280px;
-		height: 336px;
+		height: 372px;
 		background-size: 100%;
+		background-position: -8px 0px;
+		margin-bottom: 0px;
 	}
 	.menu-left .menu-group .menu-group-box {
 		width: 230px;
@@ -2088,6 +2106,7 @@ margin-top: 20px;
 	.menu-right{
 		width: 100%;
 		left: 0px; 
+		top:-6px;
 	}
 	.menu-right .menu-right-item {
 		cursor: pointer;

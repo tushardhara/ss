@@ -8,10 +8,14 @@ get_header(); ?>
 			<div class="container clearfix">
 				<div class="about-ss">
 					<h1 class="big-title "><span>Who is</span><span>Sugar and Spice</span></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra nulla sit amet arcu tincidunt, et eleifend mauris tempus. Etiam ac scelerisque turpis, at posuere.<br/><br/>
-					Quisque nisl elit, accumsan a tristique non, elementum nec libero. Morbi imperdiet, lectus non cursus molestie, eros nisi accumsan odio, eget porta quam sem vitae risus.lectus non cursus molestie, eros nisi accumsan odio, eget porta quam sem vitae risus.<br/><br/>
-					Quisque nisl elit, accumsan a tristique non, elementum nec libero. Morbi imperdiet, 
-					</p>
+					<?php
+					if ( have_posts() ) : 
+					// Start the Loop.
+						while ( have_posts() ) : the_post();
+					?>
+					<p><?php the_content()?></p>
+					<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
 				<div class="wardrobe">
 					<img src="<?php echo IMAGES?>/wardrobe.png" width="504" height="408" alt="menu" usemap="#menuMap">

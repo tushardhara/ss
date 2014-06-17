@@ -44,4 +44,14 @@
         }
       }
     );
+    $('.gramaphone').on('click',function() {
+	  var audio=document.getElementById("player_audio");
+	  if (audio.paused == false) {
+	      audio.pause();
+	      console.log('music paused');
+	  } else {
+	      audio.play();
+	      console.log('music playing');
+	  }
+	});
 })(jQuery);
