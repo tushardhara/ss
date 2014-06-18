@@ -116,9 +116,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 
-	p { margin: 0 0 20px 0; font-size: 13px;font-family: "Throw My Hands Up in the Air Bold";
+	p { margin: 0 0 20px 0; font-family: "Throw My Hands Up in the Air Bold";
 		font-weight: bold;
-		font-size: 15px;}
+		font-size: 16px;line-height: 21px;}
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
